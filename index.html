@@ -174,11 +174,14 @@
     .config-subtitle { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--warm-gray); text-transform: uppercase; margin-bottom: 2rem; }
     .config-group { margin-bottom: 1.5rem; text-align: left; }
     .config-label { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--gold); text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
-    .config-input { width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--gold-light); border-radius: 2px; background: white; font-family: 'Cormorant Garamond', serif; font-size: 1rem; outline: none; }
+    
+    /* MODIFICATION ICI : On utilise type="password" pour cacher les clés */
+    .config-input { width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--gold-light); border-radius: 2px; background: white; font-family: 'DM Mono', monospace; font-size: 1rem; outline: none; }
+    
     .config-hint { font-size: 0.8rem; font-style: italic; color: var(--warm-gray); margin-top: 0.4rem; line-height: 1.3; }
     .btn-save-config { display: block; width: 100%; padding: 1rem; background: var(--gold); color: var(--ink); border: none; font-family: 'DM Mono', monospace; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; cursor: pointer; transition: 0.2s; border-radius: 2px; }
     .btn-save-config:hover { background: var(--gold-light); }
-   body { background: #f5f0e8; padding: 10px; } .menu-card { max-width: 800px; margin: auto; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }</style></head><body><div class="menu-card theme-custom" id="menu-card" style="--ai-bg: #2C1A0D; --ai-text: #F8F8F8; --ai-primary: #FF8C00; --ai-accent: #FF0000; --ai-font: Arial, Helvetica, sans-serif;">
+   body { background: #f5f0e8; padding: 10px; } .menu-card { max-width: 800px; margin: auto; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }</style></head><body><div class="menu-card theme-minimal" id="menu-card" style="--ai-bg: #1A1A1A; --ai-text: #F0F0F0; --ai-primary: #FFD700; --ai-accent: #E74C3C; --ai-font: Arial, Helvetica, sans-serif;">
     <div class="lang-switch-ui">
       <button class="show-fr-btn" onclick="document.getElementById('menu-card').classList.remove('show-en');">🇫🇷 FR</button>
       <button class="show-en-btn" onclick="document.getElementById('menu-card').classList.add('show-en');">🇬🇧 EN</button>
@@ -186,430 +189,834 @@
     
     <div class="menu-header">
       <div class="menu-restaurant-name" >Indian Coffee</div>
-      <div class="menu-tagline-text lang-fr" >Fast Food</div>
-      <div class="menu-tagline-text lang-en" >Fast Food</div>
+      <div class="menu-tagline-text lang-fr" >Cuisine Indienne Authentique • Saveurs Épicées</div>
+      <div class="menu-tagline-text lang-en" >Authentic Indian Cuisine • Spicy Flavors</div>
     </div>
     
     
       <div class="menu-section">
-        <div class="section-title lang-fr" >MENUS WINGS / TENDERS</div>
-        <div class="section-title lang-en" >WINGS / TENDERS MENUS</div>
+        <div class="section-title lang-fr" >Entrées</div>
+        <div class="section-title lang-en" >Starters</div>
         
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >8 WINGS + FRITES + BOISSON</span>
-                <span class="item-name lang-en" >8 WINGS + FRIES + DRINK</span>
+                <span class="item-name lang-fr" >Samosa Viande (2 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >8 ailes de poulet, frites et une boisson au choix.</div>
-              <div class="item-desc lang-en" >8 chicken wings, fries, and a drink of choice.</div>
+              <div class="item-desc lang-fr" >Viande hachée et pomme de terre</div>
+              <div class="item-desc lang-en" >Minced meat and potato</div>
             </div>
-            <div class="item-price" >8.90€</div>
+            <div class="item-price" >5€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >4 TENDERS + FRITES + BOISSON</span>
-                <span class="item-name lang-en" >4 TENDERS + FRIES + DRINK</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Samosa Légumes (2 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >4 tenders de poulet, frites et une boisson au choix.</div>
-              <div class="item-desc lang-en" >4 chicken tenders, fries, and a drink of choice.</div>
+              <div class="item-desc lang-fr" >Légumes et pomme de terre</div>
+              <div class="item-desc lang-en" >Vegetables and potato</div>
             </div>
-            <div class="item-price" >8.90€</div>
+            <div class="item-price" >5€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >WINGS 10 PIÈCES</span>
-                <span class="item-name lang-en" >10 PIECES WINGS</span>
+                <span class="item-name lang-fr" >Rolls Viande (2 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >10 ailes de poulet croustillantes.</div>
-              <div class="item-desc lang-en" >10 crispy chicken wings.</div>
+              <div class="item-desc lang-fr" >Rouleaux de viande et feuille de terre</div>
+              <div class="item-desc lang-en" >Meat and potato rolls</div>
             </div>
-            <div class="item-price" >7.90€</div>
+            <div class="item-price" >5€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >WINGS 20 PIÈCES</span>
-                <span class="item-name lang-en" >20 PIECES WINGS</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Badji aux Aubergines (3 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >20 ailes de poulet croustillantes.</div>
-              <div class="item-desc lang-en" >20 crispy chicken wings.</div>
+              <div class="item-desc lang-fr" >Beignet fait à base de pois chiche</div>
+              <div class="item-desc lang-en" >Fritter made from chickpea flour</div>
             </div>
-            <div class="item-price" >14.90€</div>
+            <div class="item-price" >5€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >TENDERS 8 PIÈCES</span>
-                <span class="item-name lang-en" >8 PIECES TENDERS</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Badji aux Pommes de Terre (3 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >8 tenders de poulet croustillants.</div>
-              <div class="item-desc lang-en" >8 crispy chicken tenders.</div>
+              <div class="item-desc lang-fr" >Beignet fait à base de pois chiche</div>
+              <div class="item-desc lang-en" >Fritter made from chickpea flour</div>
             </div>
-            <div class="item-price" >9.90€</div>
+            <div class="item-price" >5€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >TENDERS 16 PIÈCES</span>
-                <span class="item-name lang-en" >16 PIECES TENDERS</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Badji aux Oignons (3 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >16 tenders de poulet croustillants.</div>
-              <div class="item-desc lang-en" >16 crispy chicken tenders.</div>
+              <div class="item-desc lang-fr" >Beignet fait à base de pois chiche</div>
+              <div class="item-desc lang-en" >Fritter made from chickpea flour</div>
             </div>
-            <div class="item-price" >17.90€</div>
+            <div class="item-price" >5€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >MIX 5 WINGS + 5 TENDERS</span>
-                <span class="item-name lang-en" >MIX 5 WINGS + 5 TENDERS</span>
+                <span class="item-name lang-fr" >Badji aux Crevettes (3 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >Un mélange de 5 ailes et 5 tenders de poulet.</div>
-              <div class="item-desc lang-en" >A mix of 5 chicken wings and 5 chicken tenders.</div>
+              <div class="item-desc lang-fr" >Beignet fait à base de pois chiche</div>
+              <div class="item-desc lang-en" >Fritter made from chickpea flour</div>
             </div>
-            <div class="item-price" >8.90€</div>
+            <div class="item-price" >7,50€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Assortiment pour 2 personnes</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Samosa, Badji, Rolls</div>
+              <div class="item-desc lang-en" >Samosa, Badji, Rolls</div>
+            </div>
+            <div class="item-price" >9,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Vada (2 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" >Beignet de lentilles</div>
+              <div class="item-desc lang-en" >Lentil fritter</div>
+            </div>
+            <div class="item-price" >4,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Vada aux Épinards (1 pièce)</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" >Beignet de lentilles</div>
+              <div class="item-desc lang-en" >Lentil fritter</div>
+            </div>
+            <div class="item-price" >4,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Sambar Vada (2 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" >Beignet de lentilles</div>
+              <div class="item-desc lang-en" >Lentil fritter</div>
+            </div>
+            <div class="item-price" >4,50€</div>
           </div>
         
       </div>
     
       <div class="menu-section">
-        <div class="section-title lang-fr" >ACCOMPAGNEMENT</div>
-        <div class="section-title lang-en" >SIDES</div>
+        <div class="section-title lang-fr" >Grillades</div>
+        <div class="section-title lang-en" >Grilled Dishes</div>
         
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >BARQUETTE DE FRITES</span>
-                <span class="item-name lang-en" >FRIES PORTION</span>
-                <span class="item-tags">🌱</span>
+                <span class="item-name lang-fr" >Mixte Tandoori (pour 2 personnes)</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >Une portion généreuse de frites dorées.</div>
-              <div class="item-desc lang-en" >A generous portion of golden fries.</div>
+              <div class="item-desc lang-fr" >Morceaux de poulet Tikka, Tandoori, agneau Tikka, gambas, samosa</div>
+              <div class="item-desc lang-en" >Pieces of Chicken Tikka, Tandoori, Lamb Tikka, king prawns, samosa</div>
             </div>
-            <div class="item-price" >2.50€</div>
+            <div class="item-price" >18,00€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >ROLLS</span>
-                <span class="item-name lang-en" >ROLLS</span>
+                <span class="item-name lang-fr" >Poulet Tandoori</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Cuisse de poulet marinée</div>
+              <div class="item-desc lang-en" >Marinated chicken leg</div>
+            </div>
+            <div class="item-price" >6,50€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Gambas Tandoori (5 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Gambas marinées</div>
+              <div class="item-desc lang-en" >Marinated king prawns</div>
+            </div>
+            <div class="item-price" >15,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Poulet Tikka</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Morceaux de poulet mariné</div>
+              <div class="item-desc lang-en" >Marinated chicken pieces</div>
+            </div>
+            <div class="item-price" >9,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Agneau Tikka</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Morceaux d'agneau</div>
+              <div class="item-desc lang-en" >Lamb pieces</div>
+            </div>
+            <div class="item-price" >9,90€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Saumon Tikka</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Morceaux de saumon</div>
+              <div class="item-desc lang-en" >Salmon pieces</div>
+            </div>
+            <div class="item-price" >9,90€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Paneer Tikka</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" >Brochettes de fromage indien avec des légumes</div>
+              <div class="item-desc lang-en" >Indian cheese skewers with vegetables</div>
+            </div>
+            <div class="item-price" >7,50€</div>
+          </div>
+        
+      </div>
+    
+      <div class="menu-section">
+        <div class="section-title lang-fr" >Les Salades</div>
+        <div class="section-title lang-en" >Salads</div>
+        
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Salade Poulet Tikka</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Légumes frais, poulet Tikka</div>
+              <div class="item-desc lang-en" >Fresh vegetables, Chicken Tikka</div>
+            </div>
+            <div class="item-price" >13,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Salade Saumon Tikka</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Salade, saumon, tomates, maïs</div>
+              <div class="item-desc lang-en" >Salad, salmon, tomatoes, corn</div>
+            </div>
+            <div class="item-price" >15,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Salade Végétarienne</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" >Salade de légumes, maïs, œufs, fromage, servie avec Naan nature</div>
+              <div class="item-desc lang-en" >Vegetable salad, corn, eggs, cheese, served with plain Naan</div>
+            </div>
+            <div class="item-price" >12,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Raita</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" >Yaourt aux concombres, tomates et oignons</div>
+              <div class="item-desc lang-en" >Yogurt with cucumbers, tomatoes and onions</div>
+            </div>
+            <div class="item-price" >5,00€</div>
+          </div>
+        
+      </div>
+    
+      <div class="menu-section">
+        <div class="section-title lang-fr" >Plats</div>
+        <div class="section-title lang-en" >Main Courses</div>
+        
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Sauce Vindaloo</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags">🌶️</span>
               </div>
-              <div class="item-desc lang-fr" >Panés de viande d'agneau épicée et pomme de terre.</div>
-              <div class="item-desc lang-en" >Breaded rolls with spicy lamb meat and potato.</div>
+              <div class="item-desc lang-fr" >Sauce épicée composée d'épices pour les amateurs de sensations fortes. Servie sans accompagnement.</div>
+              <div class="item-desc lang-en" >Spicy sauce made with spices for those who love strong sensations. Served without accompaniment.</div>
             </div>
-            <div class="item-price" >2.50€</div>
+            <div class="item-price" ></div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >SAMOSSAS</span>
-                <span class="item-name lang-en" >SAMOSAS</span>
+                <span class="item-name lang-fr" >Sauce Curry</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >Chausson de viande ou de légumes.</div>
-              <div class="item-desc lang-en" >Meat or vegetable turnover.</div>
+              <div class="item-desc lang-fr" >Sauce à base de légumes et d'épices traditionnelles, pleine de saveur. Servie sans accompagnement.</div>
+              <div class="item-desc lang-en" >Traditional sauce based on vegetables and spices, full of flavor. Served without accompaniment.</div>
             </div>
-            <div class="item-price" >2.50€</div>
+            <div class="item-price" ></div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >NAAN NATURE</span>
-                <span class="item-name lang-en" >PLAIN NAAN</span>
-                <span class="item-tags">🌱</span>
-              </div>
-              <div class="item-desc lang-fr" >Pain Indien traditionnel.</div>
-              <div class="item-desc lang-en" >Traditional Indian bread.</div>
-            </div>
-            <div class="item-price" >3.50€</div>
-          </div>
-        
-          <div class="menu-item">
-            <div style="flex:1;">
-              <div class="item-name-block">
-                <span class="item-name lang-fr" >NAAN AU FROMAGE</span>
-                <span class="item-name lang-en" >CHEESE NAAN</span>
-                <span class="item-tags">🌱</span>
-              </div>
-              <div class="item-desc lang-fr" >Pain Indien fourré au fromage.</div>
-              <div class="item-desc lang-en" >Indian bread stuffed with cheese.</div>
-            </div>
-            <div class="item-price" >4.50€</div>
-          </div>
-        
-          <div class="menu-item">
-            <div style="flex:1;">
-              <div class="item-name-block">
-                <span class="item-name lang-fr" >NAAN À L'AIL</span>
-                <span class="item-name lang-en" >GARLIC NAAN</span>
-                <span class="item-tags">🌱</span>
-              </div>
-              <div class="item-desc lang-fr" >Pain Indien à l'ail.</div>
-              <div class="item-desc lang-en" >Indian bread with garlic.</div>
-            </div>
-            <div class="item-price" >3.50€</div>
-          </div>
-        
-          <div class="menu-item">
-            <div style="flex:1;">
-              <div class="item-name-block">
-                <span class="item-name lang-fr" >KHEEMA NAN</span>
-                <span class="item-name lang-en" >KHEEMA NAAN</span>
+                <span class="item-name lang-fr" >Sauce Kourouma</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >Pain Indien fourré à la viande hachée.</div>
-              <div class="item-desc lang-en" >Indian bread stuffed with minced meat.</div>
+              <div class="item-desc lang-fr" >Sauce à base de crème fraîche et parfumée au lait de coco. Servie sans accompagnement.</div>
+              <div class="item-desc lang-en" >Sauce based on fresh cream and flavored with coconut milk. Served without accompaniment.</div>
             </div>
-            <div class="item-price" >5.50€</div>
+            <div class="item-price" ></div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Tikka Massala</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Mélange d'épices, de crème, d'oignons et de poivrons. Servie sans accompagnement.</div>
+              <div class="item-desc lang-en" >Mix of spices, cream, onions and peppers. Served without accompaniment.</div>
+            </div>
+            <div class="item-price" ></div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Kottu</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Pâtes hachées Rotta avec œuf ou viande</div>
+              <div class="item-desc lang-en" >Chopped Rotta pasta with egg or meat</div>
+            </div>
+            <div class="item-price" ></div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Briyani</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Mélange de riz safrané, de tomates, d'oignons, de gingembre et d'épices indiennes</div>
+              <div class="item-desc lang-en" >Mix of saffron rice, tomatoes, onions, ginger and Indian spice</div>
+            </div>
+            <div class="item-price" ></div>
           </div>
         
       </div>
     
       <div class="menu-section">
-        <div class="section-title lang-fr" >MENUS NAAN DWICH</div>
-        <div class="section-title lang-en" >NAAN DWICH MENUS</div>
+        <div class="section-title lang-fr" >Spécialités</div>
+        <div class="section-title lang-en" >Specialties</div>
         
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >POULET TIKKA</span>
-                <span class="item-name lang-en" >CHICKEN TIKKA</span>
+                <span class="item-name lang-fr" >Butter Chicken</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >Naan garni d'émincés de poulet Tikka cuit au four tandoor.</div>
-              <div class="item-desc lang-en" >Naan garnished with sliced Tandoor-cooked chicken Tikka.</div>
+              <div class="item-desc lang-fr" >Poulet au beurre et épices</div>
+              <div class="item-desc lang-en" >Chicken with butter and spices</div>
             </div>
-            <div class="item-price" >9.90€ (MENU) / 8.90€ (SEUL)</div>
+            <div class="item-price" >14,90€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >POULET CURRY</span>
-                <span class="item-name lang-en" >CHICKEN CURRY</span>
+                <span class="item-name lang-fr" >Curry d'Agneau aux Épinards</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >Naan garni d'émincés de poulet curry cuit au four tandoor.</div>
-              <div class="item-desc lang-en" >Naan garnished with sliced Tandoor-cooked chicken curry.</div>
+              <div class="item-desc lang-fr" >Agneau aux épinards et épices</div>
+              <div class="item-desc lang-en" >Lamb with spinach and spices</div>
             </div>
-            <div class="item-price" >9.90€ (MENU) / 8.90€ (SEUL)</div>
+            <div class="item-price" >15,90€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >POULET MIX</span>
-                <span class="item-name lang-en" >MIXED CHICKEN</span>
+                <span class="item-name lang-fr" >Fried Rice Poulet</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >Naan garni d'un mélange de poulet Tikka et curry.</div>
-              <div class="item-desc lang-en" >Naan garnished with a mix of Tikka and curry chicken.</div>
+              <div class="item-desc lang-fr" >Riz sauté au poulet</div>
+              <div class="item-desc lang-en" >Stir-fried rice with chicken</div>
             </div>
-            <div class="item-price" >9.90€ (MENU) / 8.90€ (SEUL)</div>
+            <div class="item-price" >14,50€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >KEFTA MASSALA</span>
-                <span class="item-name lang-en" >KEFTA MASSALA</span>
+                <span class="item-name lang-fr" >Fried Rice Royal</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Riz sauté aux crevettes et aux gambas</div>
+              <div class="item-desc lang-en" >Stir-fried rice with shrimp and king prawns</div>
+            </div>
+            <div class="item-price" >16,90€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Chicken 65</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags">🌶️</span>
               </div>
-              <div class="item-desc lang-fr" >Naan garni de viande hachée mélangée aux épices Indiennes.</div>
-              <div class="item-desc lang-en" >Naan garnished with minced meat mixed with Indian spices.</div>
+              <div class="item-desc lang-fr" >Poulet frit et épicé</div>
+              <div class="item-desc lang-en" >Fried and spicy chicken</div>
             </div>
-            <div class="item-price" >9.90€ (MENU) / 8.90€ (SEUL)</div>
+            <div class="item-price" >9,00€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >TENDERS</span>
-                <span class="item-name lang-en" >TENDERS</span>
-                <span class="item-tags"></span>
-              </div>
-              <div class="item-desc lang-fr" >Naan garni de tenders de poulet.</div>
-              <div class="item-desc lang-en" >Naan garnished with chicken tenders.</div>
-            </div>
-            <div class="item-price" >9.90€ (MENU) / 8.90€ (SEUL)</div>
-          </div>
-        
-      </div>
-    
-      <div class="menu-section">
-        <div class="section-title lang-fr" >MENUS CROUSTY</div>
-        <div class="section-title lang-en" >CRUNCHY MENUS</div>
-        
-        
-          <div class="menu-item">
-            <div style="flex:1;">
-              <div class="item-name-block">
-                <span class="item-name lang-fr" >CHILLY CROUSTY</span>
-                <span class="item-name lang-en" >CHILLY CRUNCHY</span>
+                <span class="item-name lang-fr" >Chili Chicken</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags">🌶️</span>
               </div>
-              <div class="item-desc lang-fr" >Filet de poulet grillé, Poivrons croquants, Oignons sautés, Sauce maison. Avec votre choix de sauce (Fromagère crémeuse ou Curry doux) et boisson.</div>
-              <div class="item-desc lang-en" >Grilled chicken fillet, Crunchy peppers, Sautéed onions, Homemade sauce. With your choice of sauce (Creamy cheese or Mild curry) and drink.</div>
+              <div class="item-desc lang-fr" >Poulet frit et sauce chili</div>
+              <div class="item-desc lang-en" >Fried chicken with chili sauce</div>
             </div>
-            <div class="item-price" >9.90€</div>
+            <div class="item-price" >11,90€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Chili Crevettes</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌶️</span>
+              </div>
+              <div class="item-desc lang-fr" >Crevettes frites et épices, sauce chili</div>
+              <div class="item-desc lang-en" >Fried shrimp with spices, chili sauce</div>
+            </div>
+            <div class="item-price" >14,90€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Beef Deval</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌶️</span>
+              </div>
+              <div class="item-desc lang-fr" >Bœuf épicé</div>
+              <div class="item-desc lang-en" >Spicy beef</div>
+            </div>
+            <div class="item-price" >16,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Dorade Royale Entière</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Dorade entière au four Tandoor avec riz</div>
+              <div class="item-desc lang-en" >Whole bream from the Tandoor oven with rice</div>
+            </div>
+            <div class="item-price" >21,90€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Fried Rice Mix</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Riz sauté avec crevettes, poulet et bœuf</div>
+              <div class="item-desc lang-en" >Stir-fried rice with shrimp, chicken and beef</div>
+            </div>
+            <div class="item-price" >17,90€</div>
           </div>
         
       </div>
     
       <div class="menu-section">
-        <div class="section-title lang-fr" >MENUS BURGERS</div>
-        <div class="section-title lang-en" >BURGER MENUS</div>
+        <div class="section-title lang-fr" >Garnitures et Accompagnements</div>
+        <div class="section-title lang-en" >Sides and Accompaniments</div>
         
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >BURGER POULET CROUSTILLANT</span>
-                <span class="item-name lang-en" >CRISPY CHICKEN BURGER</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Naan au Fromage</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >Pain, Salade, tomate, raclette cheese, filet de poulet croustillant, sauce maison.</div>
-              <div class="item-desc lang-en" >Bun, Lettuce, tomato, raclette cheese, crispy chicken fillet, homemade sauce.</div>
+              <div class="item-desc lang-fr" ></div>
+              <div class="item-desc lang-en" ></div>
             </div>
-            <div class="item-price" >9.90€</div>
+            <div class="item-price" >4,00€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >SMASH BURGER</span>
-                <span class="item-name lang-en" >SMASH BURGER</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Naan Nature</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >Pain, Salade, tomate, sauce maison, pickle maison, raclette cheese, steak smashé, sauce maison.</div>
-              <div class="item-desc lang-en" >Bun, Lettuce, tomato, homemade sauce, homemade pickle, raclette cheese, smashed steak, homemade sauce.</div>
+              <div class="item-desc lang-fr" ></div>
+              <div class="item-desc lang-en" ></div>
             </div>
-            <div class="item-price" >9.90€</div>
+            <div class="item-price" >3,00€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >DOUBLE SMASH BURGER</span>
-                <span class="item-name lang-en" >DOUBLE SMASH BURGER</span>
+                <span class="item-name lang-fr" >Naan à l'Ail</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" ></div>
+              <div class="item-desc lang-en" ></div>
+            </div>
+            <div class="item-price" >3,50€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Keema Naan</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >Pain, Salade, tomate, pickle maison, raclette cheese, sauce maison, double steak smashé.</div>
-              <div class="item-desc lang-en" >Bun, Lettuce, tomato, homemade pickle, raclette cheese, homemade sauce, double smashed steak.</div>
+              <div class="item-desc lang-fr" ></div>
+              <div class="item-desc lang-en" ></div>
             </div>
-            <div class="item-price" >11.90€</div>
+            <div class="item-price" >5,50€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Barottha</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" ></div>
+              <div class="item-desc lang-en" ></div>
+            </div>
+            <div class="item-price" >4,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Chapatty</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" ></div>
+              <div class="item-desc lang-en" ></div>
+            </div>
+            <div class="item-price" >2,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Riz Basmati Nature</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" ></div>
+              <div class="item-desc lang-en" ></div>
+            </div>
+            <div class="item-price" >3,50€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Riz Suprême</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" ></div>
+              <div class="item-desc lang-en" ></div>
+            </div>
+            <div class="item-price" >4,50€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Riz Coco</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" ></div>
+              <div class="item-desc lang-en" ></div>
+            </div>
+            <div class="item-price" >5,50€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Frites Maison</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" ></div>
+              <div class="item-desc lang-en" ></div>
+            </div>
+            <div class="item-price" >4,50€</div>
           </div>
         
       </div>
     
       <div class="menu-section">
-        <div class="section-title lang-fr" >DESSERTS &amp; BOISSONS</div>
-        <div class="section-title lang-en" >DESSERTS &amp; DRINKS</div>
+        <div class="section-title lang-fr" >Plats Végétariens</div>
+        <div class="section-title lang-en" >Vegetarian Dishes</div>
         
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >CRÊPE NUTELLA</span>
-                <span class="item-name lang-en" >NUTELLA CREPE</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Sauce Légumes</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >Crêpe gourmande au Nutella.</div>
-              <div class="item-desc lang-en" >Gourmet crepe with Nutella.</div>
+              <div class="item-desc lang-fr" >Sauces à base de légumes et d'épices. Servies sans accompagnement.</div>
+              <div class="item-desc lang-en" >Sauces based on vegetables and spices. Served without accompaniment.</div>
             </div>
-            <div class="item-price" >4.90€</div>
+            <div class="item-price" ></div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >GAUFRE NUTELLA</span>
-                <span class="item-name lang-en" >NUTELLA WAFFLE</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Dal</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >Gaufre moelleuse au Nutella.</div>
-              <div class="item-desc lang-en" >Soft waffle with Nutella.</div>
+              <div class="item-desc lang-fr" >Curry de lentilles servi avec riz</div>
+              <div class="item-desc lang-en" >Lentil curry served with rice</div>
             </div>
-            <div class="item-price" >4.90€</div>
+            <div class="item-price" >10,00€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >HÄAGEN-DAZS</span>
-                <span class="item-name lang-en" >HÄAGEN-DAZS</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Dal au Paneer Tikka</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >Glace Häagen-Dazs (parfum au choix).</div>
-              <div class="item-desc lang-en" >Häagen-Dazs ice cream (flavor of choice).</div>
+              <div class="item-desc lang-fr" >Dal aux lentilles avec des morceaux de fromage indien</div>
+              <div class="item-desc lang-en" >Lentil dal with Indian cheese pieces</div>
             </div>
-            <div class="item-price" >3.90€</div>
+            <div class="item-price" >12,00€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >MILKSHAKE</span>
-                <span class="item-name lang-en" >MILKSHAKE</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Thali</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >Milkshake onctueux (parfum au choix).</div>
-              <div class="item-desc lang-en" >Creamy milkshake (flavor of choice).</div>
+              <div class="item-desc lang-fr" >5 légumes en sauce accompagné de riz Basmati</div>
+              <div class="item-desc lang-en" >5 vegetables in sauce served with Basmati rice</div>
             </div>
-            <div class="item-price" >4.90€</div>
+            <div class="item-price" >13,00€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >CANETTES</span>
-                <span class="item-name lang-en" >CANS</span>
-                <span class="item-tags"></span>
+                <span class="item-name lang-fr" >Paneer Butter Masala</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
               </div>
-              <div class="item-desc lang-fr" >Boissons en canettes (Coca-Cola, Fanta, etc.).</div>
-              <div class="item-desc lang-en" >Canned drinks (Coca-Cola, Fanta, etc.).</div>
+              <div class="item-desc lang-fr" >Fromage indien en sauce au beurre, tomates, oignons, gingembre, épices indiennes et fromage indien</div>
+              <div class="item-desc lang-en" >Indian cheese in butter sauce, tomatoes, onions, ginger, Indian spices and Indian cheese</div>
             </div>
-            <div class="item-price" >2.00€</div>
+            <div class="item-price" >12,00€</div>
           </div>
         
           <div class="menu-item">
             <div style="flex:1;">
               <div class="item-name-block">
-                <span class="item-name lang-fr" >LASSI MANGUE</span>
-                <span class="item-name lang-en" >MANGO LASSI</span>
+                <span class="item-name lang-fr" >Palak Paneer</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" >Épinards et fromage indien</div>
+              <div class="item-desc lang-en" >Spinach and Indian cheese</div>
+            </div>
+            <div class="item-price" >11,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Channa Massala</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" >Pois chiche délicieux aux épices indiennes</div>
+              <div class="item-desc lang-en" >Delicious chickpeas with Indian spices</div>
+            </div>
+            <div class="item-price" >11,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Dosai</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" >Crêpe indienne salée servie avec des sauces</div>
+              <div class="item-desc lang-en" >Savory Indian crepe served with sauces</div>
+            </div>
+            <div class="item-price" ></div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Idli (4 pièces)</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags">🌱</span>
+              </div>
+              <div class="item-desc lang-fr" >Gâteau de riz cuit à la vapeur, servi avec des sauces</div>
+              <div class="item-desc lang-en" >Steamed rice cake, served with sauces</div>
+            </div>
+            <div class="item-price" >12,00€</div>
+          </div>
+        
+      </div>
+    
+      <div class="menu-section">
+        <div class="section-title lang-fr" >Dosai Non Végétariens</div>
+        <div class="section-title lang-en" >Non-Vegetarian Dosai</div>
+        
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Royal Dosai</span>
+                <span class="item-name lang-en" ><br></span>
                 <span class="item-tags"></span>
               </div>
-              <div class="item-desc lang-fr" >Boisson traditionnelle Indienne au yaourt et à la mangue.</div>
-              <div class="item-desc lang-en" >Traditional Indian yogurt and mango drink.</div>
+              <div class="item-desc lang-fr" >Garnie de viande hachée et pomme de terre</div>
+              <div class="item-desc lang-en" >Garnished with minced meat and potato</div>
             </div>
-            <div class="item-price" >4.90€</div>
+            <div class="item-price" >14,00€</div>
+          </div>
+        
+          <div class="menu-item">
+            <div style="flex:1;">
+              <div class="item-name-block">
+                <span class="item-name lang-fr" >Bollywood Dosai</span>
+                <span class="item-name lang-en" ><br></span>
+                <span class="item-tags"></span>
+              </div>
+              <div class="item-desc lang-fr" >Garnie de viande, oignons et fromage</div>
+              <div class="item-desc lang-en" >Garnished with meat, onions and cheese</div>
+            </div>
+            <div class="item-price" >14,00€</div>
           </div>
         
       </div>
     
     
-    <div class="menu-footer" >8 Imp. de l'Orée du Bois, 77176 Savigny-le-Temple</div>
+    <div class="menu-footer" ></div>
   </div></body></html>
